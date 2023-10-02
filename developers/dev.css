@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #2d2d2d;
+  height:100%;
+  width:100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: aqua;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  margin: 0px;
+  
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: blueviolet;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position:absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background-color: aquamarine;
+}
+
+input:checked + .slider::before {
+  transform: translateX(35px);
+}
+
+.heading {
+  width: 150px;
+  height: 100px;
+  display: block;
+  margin: 10px 90px;
+  padding-left: 63px;
+}
+
+.heading h1 {
+  font-size: xx-large;
+  font-weight: 900;
+  margin: 5px;
+  padding-left: 120px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 10px 45px;
+}
+
+.col1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 50%;
+  margin: 15px 0px;
+}
+
+
+.col2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 50%;
+  margin: 15px 0px;
+}
+
+.col3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 50%;
+  margin: 15px 0px;
+  padding-left: 65px;
+}
+
+.image {
+  border: 2px solid whitesmoke;
+}
+
+.author {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.social-icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons img {
+  width: 45px;
+  height: 45px;
+  margin: 30px 5px;
+}
+

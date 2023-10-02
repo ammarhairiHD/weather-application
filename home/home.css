@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #2d2d2d;
+  height:100%;
+  width:100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: aqua;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  margin: 0px;
+  
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: blueviolet;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider:before {
+  position:absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background-color: aquamarine;
+}
+
+input:checked + .slider::before {
+  transform: translateX(35px);
+}
+
+.container {
+  width: 90%;
+  margin: 0 100px;
+  color: whitesmoke;
+  display: relative;
+}
+
+.bar-top {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.state{
+  margin-left: 10px;
+}
+
+.date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.day {
+  margin-right: 10px;
+}
+
+.display-weather {
+ width: 100%; 
+ display: grid;
+ justify-content: center;
+ align-items: center;
+}
+
+.condition {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.temp {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.day-temp {
+  font-size: x-large;
+  font-weight: bold;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.night-temp {
+  font-size: x-large;
+  font-weight: bold;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.next-weather {
+  width: 90%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  padding: 90px;
+  background-image: linear-gradient(to top,rgba(255,255,255,0.4), rgba(44, 44, 44, 0.7));
+}
+
+.col1 {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fs-1 {
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.col2 {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fs-2 {
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.col3 {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fs-3 {
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+

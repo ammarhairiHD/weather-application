@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/search/search.css">
+  <title>Weather App</title>
+</head>
+<body>
+
+  <header>
+    <a href="https://hallucinationsdigital.com/"><img src="/logo/g363.png" alt="HD-logo" class="logo"></a>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/home/home.html">Home</a></li>
+            <li><a href="/search/search.html">Search</a></li>
+            <li><a href="/developers/dev.html">Developers</a></li>
+        </ul>
+    </nav>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+  </header>
+
+   <div class="top">
+     <div class="search">
+       <input type="text" spellcheck="false" placeholder="Search for City" name="city">
+       <button type="submit"><img src="/icons/Search.svg"></button>
+     </div>
+   </div>
+ 
+  <div class="container">
+
+    <div class="weather">
+       <div class="location">Bandar Baru Bangi <br>    <span style="font-weight: bold;">Selangor</span></div>
+
+       <div class="weather-icon">
+         <img src="/icons/Sunny.svg" width="300px" height="300px">
+       </div>
+
+      <div class="temp">
+         <div class="day-temp">30<span style="color:yellow" class="celcius">°</span></div>
+         <div class="night-temp">22<span style="color:yellow" class="celcius">°</span></div>
+      </div>
+
+      <div class="date">
+        Sunday
+      </div>
+    </div>
+
+
+      <div class="details">
+
+        <div class="perciation">Perciation <br> <span style="font-weight: bolder; font-size: xx-large">40%</span></div>
+
+        <div class="humidity">Humidity <br> <span style="font-weight: bolder; font-size: xx-large">80%</span></div>
+
+        <div class="humidity">Wind <br> <span style="font-weight: bolder; font-size: xx-large">6</span>km/h</div>
+
+      </div>
+
+  </div>
+  
+  <script src="/search/search.js"></script>
+
+</body>
+</html>

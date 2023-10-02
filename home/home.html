@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <title>Weather App</title>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="https://hallucinationsdigital.com/"><img src="/logo/g363.png" alt="HD-logo" class="logo"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/home/home.html">Home</a></li>
+                    <li><a href="/search/search.html">Search</a></li>
+                    <li><a href="/developers/dev.html">Developers</a></li>
+                </ul>
+            </nav>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+        </header>
+            
+        
+
+        <div class="container">
+            
+          <div class="bar-top">
+            <div class="location">
+                <img src="/icons/Earth.svg" style="width: 50px; height: 50p;">
+                <div class="state">Bandar Baru Bangi<br> <span style=" font-weight: bold;">Selangor</span></div>
+            </div>
+              <div class="date">
+            <div class="day">21 September 2023 <br> <span style=" font-weight: bold;">Thursday</span></div>
+                <img src="/icons/Calendar.svg" style="height: 50px; width: 50px ">
+            </div>
+          </div>
+          
+          <div class="display-weather">
+            <div class="weather">
+                <img src="/icons/Rain.svg" alt="rainy" style="height: 200px;width: 200px;">
+                <div class="condition">Rainy</div>
+                
+                <div class="temp">
+                    <div class="day-temp">16<span style="color: yellow;">°C</span></div>
+                    <div class="night-temp">20<span  style="color: yellow;">°C</span></div>
+                </div>
+                
+            </div>
+          </div>   
+            
+            
+            <div class="next-weather">
+                <div class="col1">
+                    <img src="/icons/Cloudy.svg" style="height: 150px;width: 150px;" id="icon1">
+                    <div class="fs-1">
+                        20<span  style="color: yellow;">°C</span> <br> 16:00
+                    </div>
+                    
+                </div>
+                <div class="col2">
+                    <img src="/icons/Windy.svg" style="height: 150px;width: 150px;" id="icon2">
+                    <div class="fs-2">25<span  style="color: yellow;">°C</span> <br>17:00</div>
+        
+                </div>
+                <div class="col3">
+                    <img src="/icons/Thunderstorm.svg" style="height: 150px;width: 150px;" id="icon3">
+                    <div class="fs-3">17<span  style="color: yellow;">°C</span> <br>18:00</div>
+                    
+            </div>
+        </div>
+    
+        <script src="home.js"></script>
+
+    </body>
+</html>
