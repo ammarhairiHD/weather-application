@@ -153,15 +153,23 @@ input:checked + .slider::before {
 
 .weather-icon {
   padding: 5px;
+  width: 300px;
+  height: 300px;
 }
 
 .temp {
   display: flex;
 }
 
-.day-temp, .night-temp {
+.day-temp {
   font-size: xx-large;
   margin: 5px;
+}
+
+.max-temp {
+  font-size: xx-large;
+  margin: 5px;
+  color: #fff200;
 }
 
 .celcius {
@@ -178,7 +186,29 @@ input:checked + .slider::before {
   justify-content: space-around;
 }
 
-.perciation, .humidity, .wind {
+.humidity, .wind, .sea {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+.wind-speed, .humidity-level, .sea-level {
+  justify-content: left;
+  display: block;
+  margin: 5px;
   font-size: larger;
 }
+
+.wind-detail {
+  display: flex;
+}
+
+.humidity-detail {
+  display: flex;
+}
+
+
 
