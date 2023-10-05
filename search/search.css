@@ -210,5 +210,193 @@ h1 {
   display: flex;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
 
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 320px ) {
+
+
+  .header{ 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+      width: 60%;
+  }
+
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  } 
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+   ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .switch {
+    position: relative;
+    display: none;
+    width: 35px;
+    height: 20px;
+    margin: 0 40px 0 0;
+    padding-right: 20px;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    transition: .4s;
+    border-radius: 34px;
+    padding-right: 15px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider:before {
+    position:absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  input:checked + .slider {
+    background-color: aquamarine;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(15px);
+  }
+
+  .switch.active {
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 50%;
+    margin: 25px;
+  }
+  
+  .weather {
+    margin: 10px;
+  }
+  
+  .location {
+    font-size: medium;
+  }
+  
+  .weather-icon {
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .temp {
+    display: flex;
+  }
+  
+  .day-temp {
+    font-size: xx-large;
+    margin: 5px;
+  }
+  
+  .max-temp {
+    font-size: xx-large;
+    margin: 5px;
+    color: #fff200;
+  }
+  
+  .celcius {
+    font-size: 40px;
+  }
+  
+  .date {
+    font-weight: 100;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .humidity, .wind, .sea {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: x-large;
+  }
+  
+  .wind-speed, .humidity-level, .sea-level {
+    justify-content: left;
+    display: block;
+    margin: 5px;
+    font-size: larger;
+  }
+  
+  .wind-detail {
+    display: flex;
+  }
+  
+  .humidity-detail {
+    display: flex;
+  }
+
+}
 
