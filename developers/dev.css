@@ -8,11 +8,26 @@
   font-weight: 200;
   font-size: 16px;
   text-decoration: none;
-  color: whitesmoke;
+}
+
+:root {
+  --body-color: #2d2d2d;
+  --primary-color: white;
+  --secondary-color: yellow;
+  --hover-color: blueviolet;
+  --gradient-bg: linear-gradient(to top,rgba(255,255,255,0.4), rgba(44, 44, 44, 0.7));
+}
+
+.light-theme {
+  --body-color: rgb(196, 191, 191);
+  --primary-color: black;
+  --secondary-color: blue;
+  --hover-color: blueviolet;
+  --gradient-bg: linear-gradient(to top,rgba(44, 44, 44, 0.7)rgba(255,255,255,0.4), );
 }
 
 body {
-  background-color: #2d2d2d;
+  background-color: var(--body-color);
   height:100%;
   width:100%;
 }
@@ -39,10 +54,11 @@ header {
 
 .nav_links li a {
   transition: all 0.3s ease 0s;
+  color: var(--primary-color);
 }
 
 .nav-links li a:hover {
-  color: aqua;
+  color: var(--hover-color);
 }
 
 .switch {
@@ -103,6 +119,7 @@ input:checked + .slider::before {
   font-weight: 900;
   margin: 5px;
   padding-left: 120px;
+  color: var(--primary-color);
 }
 
 .container {
@@ -150,6 +167,11 @@ input:checked + .slider::before {
 .author {
   font-size: larger;
   font-weight: 600;
+  color: var(--primary-color);
+}
+
+.role {
+  color: var(--primary-color);
 }
 
 .social-icons {

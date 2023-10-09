@@ -45,3 +45,10 @@ toggleButton.addEventListener('click', () => {
     mode.classList.toggle('active')
 
 })
+
+const theme = document.getElementById("trigger");
+const earth = document.getElementById("earth");
+
+theme.onclick = function () {
+    document.body.classList.toggle("light-theme")
+}

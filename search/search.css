@@ -11,8 +11,24 @@
   color: whitesmoke;
 }
 
+:root {
+  --body-color: #2d2d2d;
+  --primary-color: white;
+  --secondary-color: yellow;
+  --hover-color: blueviolet;
+  --gradient-bg: linear-gradient(to top,rgba(255,255,255,0.4), rgba(44, 44, 44, 0.7));
+}
+
+.light-theme {
+  --body-color: rgb(196, 191, 191);
+  --primary-color: black;
+  --secondary-color: blue;
+  --hover-color: blueviolet;
+  --gradient-bg: linear-gradient(to top,rgba(44, 44, 44, 0.7)rgba(255,255,255,0.4), );
+}
+
 body {
-  background-color: #2d2d2d;
+  background-color: var(--body-color);
   height:100%;
   width:100%;
 }
@@ -35,14 +51,16 @@ header {
 .nav-links li {
   display: inline-block;
   padding: 0px 20px;
+  
 }
 
 .nav_links li a {
   transition: all 0.3s ease 0s;
+  color: var(--primary-color);
 }
 
 .nav-links li a:hover {
-  color: aqua;
+  color: var(--hover-color);
 }
 
 .switch {
@@ -149,6 +167,7 @@ input:checked + .slider::before {
 
 .location {
   font-size: medium;
+  color: var(--primary-color);
 }
 
 .weather-icon {
@@ -164,12 +183,13 @@ input:checked + .slider::before {
 .day-temp {
   font-size: xx-large;
   margin: 5px;
+  color: var(--primary-color);
 }
 
 .max-temp {
   font-size: xx-large;
   margin: 5px;
-  color: #fff200;
+  color: var(--secondary-color);
 }
 
 .celcius {
@@ -193,6 +213,7 @@ input:checked + .slider::before {
 
 h1 {
   font-size: x-large;
+  color: var(--primary-color);
 }
 
 .wind-speed, .humidity-level, .sea-level {
@@ -200,6 +221,7 @@ h1 {
   display: block;
   margin: 5px;
   font-size: larger;
+  color: var(--primary-color);
 }
 
 .wind-detail {
@@ -208,6 +230,14 @@ h1 {
 
 .humidity-detail {
   display: flex;
+}
+
+.percetage {
+  color: var(--primary-color);
+}
+
+.km {
+  color: var(--primary-color);
 }
 
 .toggle-button {
